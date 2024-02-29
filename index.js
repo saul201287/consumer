@@ -1,11 +1,11 @@
 
 const amqp = require("amqplib");
 
-const exchangeName = process.env.AMQP_EXCH || "";
-const routingKey = process.env.AMQP_ROUTINGKEY || "";
+const exchangeName = process.env.AMQP_EXCH || "upchiapas.exc";
+const routingKey = process.env.AMQP_ROUTINGKEY || "12345";
 const options = {
-  username: process.env.AMQP_USERNAME,
-  password: process.env.AMQP_PASSWORD,
+  username: process.env.AMQP_USERNAME || "saul",
+  password: process.env.AMQP_PASSWORD || "123456",
 };
 const queue = "upchiapas.init.que";
 

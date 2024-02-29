@@ -34,7 +34,7 @@ const consumer = async () => {
           price: data.price,
         });
         console.log(body);
-        await fetch("http://localhost:3001/payment/", {
+        await fetch("https://api-receptora.onrender.com/payment/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
